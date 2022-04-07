@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="author" content="Sortnio">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <meta name="description" content="EnftyMart - NFT Marketplace html Template">
+    <meta name="keywords" content="nft, crypto, html5 template">
+    <title>Account | Blockchain Project</title>
+    <!-- Favicon -->
+    <link rel="icon" sizes="16x16" href="images/favicon.png">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/vendor.bundle.css?ver=100">
+    <link rel="stylesheet" href="assets/css/style.css?ver=100">
+</head>
+
+<body>
+    <div class="page-wrap">
+      
+        <section class="profile-section section-space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                       
+                    </div><!-- end col -->
+                    <div class="col-lg-9 ps-xl-5">
+                        <div class="user-panel-title-box text-dark">
+                            <h3>Account Settings</h3>
+                        </div><!-- end user-panel-title-box -->
+                        <div class="profile-setting-panel-wrap">
+                            
+                            
+                                <div class="tab-pane fade show active" id="change-password" role="tabpanel" aria-labelledby="change-password-tab">
+                                    <div class="profile-setting-panel">
+                                        <h5 class="mb-4">Handle Transactions</h5>
+                                        <div class="mb-3">
+                                            <label for="oldPassword" class="form-label">Private Key</label>
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control form-control-s1" id="privateKey" placeholder="Private Key">
+                                                <a href="oldPassword" class="password-toggle" title="Toggle show/hide pasword">
+                                                    <em class="password-shown ni ni-eye-off"></em>
+                                                    <em class="password-hidden ni ni-eye"></em>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="newPassword" class="form-label">Receiver Eth Address</label>
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control form-control-s1" id="ethAddress" placeholder="Etherium Address to Receive">
+                                                <a href="newPassword" class="password-toggle" title="Toggle show/hide pasword">
+                                                    <em class="password-shown ni ni-eye-off"></em>
+                                                    <em class="password-hidden ni ni-eye"></em>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="confirmNewPassword" class="form-label">Message</label>
+                                            <div class="position-relative" id="messageDiv">    
+                                            </div>
+                                            <div><h1 id="balanceDiv"></h1></div>
+                                        </div>
+                                        <button class="btn btn-dark mt-3" type="button" onclick="exeFunc()">Start</button>
+                                    </div><!-- end profile-setting-panel -->
+                                </div><!-- end tab-pane -->
+                              
+                            
+                        </div><!-- end profile-setting-panel-wrap-->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end profile-section -->
+        
+    </div>
+    <!-- Scripts -->
+    <script src="assets/js/bundle.js"></script>
+    <!-- <script src="assets/js/scripts.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereumjs/browser-builds/dist/ethereumjs-tx/ethereumjs-tx-1.3.3.min.js"></script>
+    <script src="./script.js"></script>
+    
+</body>
+
+</html>
